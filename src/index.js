@@ -1,4 +1,4 @@
-//CORE REACT LIBRARY
+//core React Library
 import React from 'react'
 
 //REACT DOM is for browser based projects
