@@ -10,5 +10,5 @@ body {
 }
 
 h1, h2, h3 {
-    color: var(c--blue);
+    color: var(--c-blue);
 }

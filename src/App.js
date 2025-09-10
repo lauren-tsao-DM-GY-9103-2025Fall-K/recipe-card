@@ -6,22 +6,30 @@ import RECIPE_IMG from "./assets/pancake.png"
 const App = () => {
     return (
         <div className="card">
+
+            <div class="photo">
             <img src={RECIPE_IMG} alt="yummy pancake" />
-        <h2>{RECIPE.title}</h2>
+            </div>
+
+        <div class="title"><h2>{RECIPE.title}</h2>
         <p>Recipe Description</p>
-        <h3>Ingredients</h3>
+        </div>
+
+        <div class="ingredients"><h3>Ingredients</h3>
         <ul>
         <ul>{RECIPE.ingredients.map((item, index) => {
             return <li key={index}>{item}</li>
         })}</ul>
         </ul>
+        </div>
 
-        <h3>Instructions</h3>
+        <div class="instructions"><h3>Instructions</h3>
         <ol>
             {RECIPE.instructions.map((item, index) => (
             <li key={index}>{item}</li>
         ))}
         </ol>
+        </div>
     </div>
     )
 }
